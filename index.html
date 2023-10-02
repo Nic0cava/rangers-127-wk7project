@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="icon" type="image/svg+xml" href="/images/weather.png" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="/css/main.css">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/js/main.js" defer ></script>
+<title>Weather App</title>
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/images/weather.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Weather App
+          </a>
+        </div>
+      </nav>
+
+      <div class="search">
+      <form class="row g-3 form">
+        <div class="col-auto">
+            <input class="form-control" id="city" placeholder="City Name">
+        </div>
+        <div class="col-auto">
+          <button type="submit" id="search-btn" class="btn btn-primary mb-3">Get Weather</button>
+        </div>
+      </form>
+    </div>
+
+    <h1 class="city-text" id="city-text"></h1>
+
+      <div class="cards">
+      <div class="card1" style="width: 18rem;">
+        <div class="card-header">
+          High
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item" id="high"></li>
+        </ul>
+      </div>
+      <div class="card2" style="width: 18rem;">
+        <div class="card-header">
+          Low
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item" id="low"></li>
+        </ul>
+      </div>
+      <div class="card3" style="width: 18rem;">
+        <div class="card-header">
+          Forecast
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item" id="forecast"></li>
+        </ul>
+      </div>
+      <div class="card4" style="width: 18rem;">
+        <div class="card-header">
+          Humidity
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item" id="humidity"></li>
+        </ul>
+      </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
